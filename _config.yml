@@ -1,0 +1,14 @@
+# Site settings
+title: Me vs NP
+# email: your-email@domain.com
+description: "Machine Learning, Programming Languages, Computer Science"
+baseurl: ""
+url: "http://diogo149.github.com"
+# twitter_username: jekyllrb
+github_username: diogo149
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude: ["org/"]

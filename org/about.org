@@ -1,0 +1,9 @@
+#+BEGIN_HTML
+---
+layout: page
+title: About
+permalink: /about/
+---
+#+END_HTML
+
+This site is made with [[http://jekyllrb.com/][jekyll]] and Emacs' fantastic [[http://orgmode.org][org-mode]]. See the [[TODO][source!]]
