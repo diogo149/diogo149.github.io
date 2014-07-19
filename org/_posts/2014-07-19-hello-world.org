@@ -9,10 +9,10 @@ categories:
 #+END_HTML
 Just testing the appearance of the org-mode to jekyll conversion. Useful for CSS iteration.
 
-| <10>       | <50>                                               |
-| table      | header                                             |
-|------------+----------------------------------------------------|
-| elem       | elem                                               |
+| <10>       | <40>                                     |
+| table      | header                                   |
+|------------+------------------------------------------|
+| elem       | elem                                     |
 
 | table | no | header |
 

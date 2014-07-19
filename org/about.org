@@ -6,4 +6,4 @@ permalink: /about/
 ---
 #+END_HTML
 
-This site is made with [[http://jekyllrb.com/][jekyll]] and Emacs' fantastic [[http://orgmode.org][org-mode]]. See the [[TODO][source!]]
+This site is made with [[http://jekyllrb.com/][jekyll]] and Emacs' fantastic [[http://orgmode.org][org-mode]]. See the [[https://github.com/diogo149/diogo149.github.io][source!]]
