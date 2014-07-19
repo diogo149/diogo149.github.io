@@ -1,1 +1,5 @@
 A simple blog in org-mode.
+
+Run jekyll with ~jekyll serve -w~.
+
+Convert org-mode to html ~M-x org-publish-current-project~. See my [[https://github.com/diogo149/.emacs.d][.emacs.d]] on what settings I use.
