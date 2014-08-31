@@ -7,13 +7,14 @@ categories:
 <p>
 This post isn't about the (awesome) book, it's about the immense ease and pleasure of interactive with data using Clojure.
 </p>
+
 <p>
 Have you ever lost some tabs due to some browser hijinks (and a bit of goofing up)? I have recently. Rather than accept it, I decided to do some research and figure out that Firefox keeps all of this data in the deep dark corners of some json files. Knowing that, I fired up a repl with <code>lein try clojure.org/data.json</code> and began work.
 </p>
 
+<div class="org-src-container">
 
-
-<pre class="example">;; lein try clojure.org/data.json
+<pre class="src src-clojure">;; lein try clojure.org/data.json
 (require '[clojure.data.json :as json])
 
 (def home (System/getenv "HOME") "/.mozilla/firefox/something.default")
@@ -33,9 +34,8 @@ Have you ever lost some tabs due to some browser hijinks (and a bit of goofing u
      (map #(-&gt;&gt; % :entries (map :url)))
      (map last)
      clojure.pprint/pprint)
-
 </pre>
-
+</div>
 
 <p>
 After a bit of playing around I had this and tabs were restored.

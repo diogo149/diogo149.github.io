@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Making a Simple Dead Code Finding Tool for Clojure"
+date:   2014-08-30
+categories:
+---
+<p>
+A coworker expressed the need for finding unused Clojure functions. While we could've done something simple like regexes on lines with <code>defn</code>'s to find symbols and then simple string searches to see if those substrings were used again, we realized that Clojure's namespaces were quite nice to work with, most notably the <code>ns-interns</code> function which allowed us to find which symbols are defined in which namespaces. Additionally since Clojure is homoiconic, we could just read the source with <code>read-string</code> and do direct symbol comparisons while doing a walk over the entire codebase.
+</p>
+
+<p>
+About an hour later, we killed a good amount of our codebase (which is one of the most satisfying feelings)!
+</p>
+
+<p>
+While it's quite simple for now, it's hopefully the first of many awesome static analysis tools that we can build for ourselves (and hopefully for the community as well).
+</p>
