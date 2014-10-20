@@ -73,5 +73,7 @@ Incredibly easy. We used sablono with Om, which made most of the presentation st
 I've actually been surprised by the number of people who talk to me about it. I wouldn't be suprised if there were almost as many people who use Reagent as Om, though they tend to be much less vocal about it.
 ** Reagent seems unmainted. Are you worried?
 Not at all! We've never had an issue with Reagent's functionality, and it has just worked with React as React has gotten updated.
+
+EDIT: I was just told on [[https://www.reddit.com/r/Clojure/comments/2jq0cu/om_no_trouble_in_paradise_with_clojurescript_and/][reddit]] that Reagent is moving to [[https://github.com/reagent-project][reagent-project]] to help make it easier to contribute. Great news!
 ** What about all these reusable components and the rest of the ecosystem that are being built for Om? Won't you miss those?
 I've personally never used them, so I can't comment on their quality.
