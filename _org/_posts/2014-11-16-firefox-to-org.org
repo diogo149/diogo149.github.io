@@ -36,6 +36,4 @@ What I ended up doing was opening the html file with eww, and wrote a function t
     (next-logical-line))
 #+END_SRC
 
-A few minutes later, I had all my bookmarks in Emacs. How people can live with text editors without a browser is beyond me*.
-
- * just kidding
+A few minutes later, I had all my bookmarks in Emacs. How people can live with text editors without a browser is beyond me (just kidding).
