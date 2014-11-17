@@ -1,0 +1,41 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:0
+#+BEGIN_HTML
+---
+layout: post
+title:  "Bookmarks: From Firefox to org-mode"
+date:   2014-11-16
+categories:
+---
+#+END_HTML
+
+I decided to migrating bookmarks from Firefox to org-more for multiple reasons (it's easier to add metadata, open them with different browsers, search, etc.). I started out simply copy-pasting the title, then the url, and maybe open the link to remember what it is and add some metadata into a hierarchical org-mode list, but it seemed incredibly repetitive.
+
+I then tried exporting the bookmarks, but the output file was some ugly html. Rather than try to read it, I opened it up in a browser and saw a nice representation of what I'd love to copy into org-mode, though there wouldn't be an easy way to copy links. Now, I could have opened the html file in some REPL (Python, Clojure, etc.) and parsed out the titles and links, but I was hoping for something easier. I also could have used JavaScript to print the links out on the screen, but then I'd still have to format it after I copied it into Emacs. And even if I didn't, that's still too much work.
+
+What I ended up doing was opening the html file with eww, and wrote a function that copies the title and the link into the right format (using the same functions I use when editing text). Here are the functions:
+
+#+BEGIN_SRC emacs-lisp
+  (defun my/firefox-bookmark-eww-to-org-list ()
+    "convert a link representation of a firefox bookmark read from eww to that
+  of an org mode list"
+    (interactive)
+    (delete-horizontal-space)
+    (shr-copy-url)
+    (insert "- ")
+    (end-of-line)
+    (insert "\n  - ")
+    (yank))
+
+  (defun my/firefox-bookmark-eww-to-org-list+next-line ()
+    "same as my/firefox-bookmark-eww-to-org-list, but moving to the next line
+  afterwards (useful with #'repeat)"
+    (interactive)
+    (my/firefox-bookmark-eww-to-org-list)
+    (move-beginning-of-line nil)
+    (next-logical-line))
+#+END_SRC
+
+A few minutes later, I had all my bookmarks in Emacs. How people can live with text editors without a browser is beyond me*.
+
+ * just kidding
