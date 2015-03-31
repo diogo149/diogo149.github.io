@@ -1,9 +1,0 @@
-#+BEGIN_HTML
----
-layout: page
-title: About Me
-permalink: /about_me/
----
-#+END_HTML
-* TL;DR
-Test!

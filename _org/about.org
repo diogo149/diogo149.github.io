@@ -1,9 +1,9 @@
-#+BEGIN_HTML
+#+begin_html
 ---
 layout: page
 title: About
 permalink: /about/
 ---
-#+END_HTML
+#+end_html
 
-This site is made with [[http://jekyllrb.com/][jekyll]] and Emacs' fantastic [[http://orgmode.org][org-mode]]. See the [[https://github.com/diogo149/diogo149.github.io][source!]] t
+This site is made with [[http://jekyllrb.com/][jekyll]] and emacs' fantastic [[http://orgmode.org][org-mode]]. see the [[https://github.com/diogo149/diogo149.github.io][source!]]
