@@ -4,9 +4,16 @@
     <title>Me vs NP</title>
     <link>http://diogo149.github.io</link>
     <description>Machine learning, Computer Science, Programming Languages</description>
-    <pubDate>Tue, 31 Mar 2015 13:55:24 PDT</pubDate>
-    <lastBuildDate>Tue, 31 Mar 2015 13:55:24 PDT</lastBuildDate>
+    <pubDate>Tue, 31 Mar 2015 13:58:45 PDT</pubDate>
+    <lastBuildDate>Tue, 31 Mar 2015 13:58:45 PDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Hello World</title>
+      <link>http://diogo149.github.io/blog/2015/03/31/hello-world</link>
+      <description>Initial post with org-page</description>
+      <pubDate>2015-03-31</pubDate>
+      <guid>http://diogo149.github.io/blog/2015/03/31/hello-world</guid>
+    </item>
   </channel>
 </rss>
