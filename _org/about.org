@@ -1,9 +1,0 @@
-#+begin_html
----
-layout: page
-title: About
-permalink: /about/
----
-#+end_html
-
-This site is made with [[http://jekyllrb.com/][jekyll]] and emacs' fantastic [[http://orgmode.org][org-mode]]. see the [[https://github.com/diogo149/diogo149.github.io][source!]]
