@@ -9,20 +9,17 @@
   </style>
 #+end_html
 
-~Sorry about the ugly site - just migrated from a jekyll based one to an org-page based one.~
-
 Hello, I'm a "Data Scientist"[fn:data-scientist] at [[http://enlitic.com][Enlitic]][fn:ted-talk][fn:cnn-video], where I work with the smartest people I know applying and improving deep learning algorithms on all sorts of medical data. We're an incredibly mission-driven bunch and really want to help people - and have had pretty awesome results so far[fn:enlitic-results]. Because of all that, I consider myself one of the luckiest people around - since I get to learn a ton, work on something I love, and (hopefully) am helping make the world a better place.
 
 To satisfy my love of learning, I am also a Master's student at the Georgia Institute of Technology studying Computer Science with a specialization in Machine Learning[fn:omscs].
-
-* Some of the cool things I've done so far are:
+* Some of the cool things I've done so far are
 1. getting first place in a Kaggle competition[fn:cause-effect-pairs], which allowed me to speak at NIPS 2013[fn:nips-talk] and meet some of my personal heroes and Machine Learning legends such as Yoshua Bengio[fn:nips-bengio], Yann LeCun[fn:nips-lecun], and Leon Bottou[fn:nips-bottou],
 2. got a medal at the International Math Olympiad[fn:imo-medal] and broke a 13-year losing streak for the Philippines,
 3. got the highest prize world-wide in the Interdisciplinary Contest in Modeling[fn:icm-rpi] with my awesome team,
 4. was part of the Philipinnes' national youth training program ultimate frisbee team, where I got to play all over South East Asia,
 5. won a whole other bunch of competitions on Machine Learning, Programming, Math, Entrepreneurship, and game-making (see my [[https://www.linkedin.com/in/diogomda][linkedin]] for more),
 6. wrote a bunch of code that does all sorts of fun things (see my [[https://github.com/diogo149][github]] page).
-* Everything else about me:
+* Everything else about me
 1. I am interested in all things Computer Science,
 2. spend many weekends on Deep Learning, Hyperparameter Optimization, and a combination of the two,
 3. love designing beautiful yet simple software[fn:simple-software],
