@@ -9,7 +9,7 @@
   </style>
 #+end_html
 
-Hello, I'm a "Data Scientist"[fn:data-scientist] at [[http://enlitic.com][Enlitic]][fn:ted-talk][fn:cnn-video], where I work with the smartest people I know applying and improving deep learning algorithms on all sorts of medical data. We're an incredibly mission-driven bunch and really want to help people - and have had pretty awesome results so far[fn:enlitic-results]. Because of all that, I consider myself one of the luckiest people around - since I get to learn a ton, work on something I love, and (hopefully) am helping make the world a better place.
+Hello, I'm a "Data Scientist"[fn:data-scientist] at [[http://enlitic.com][Enlitic]][fn:ted-talk][fn:cnn-video], where I work with the smartest people I know, applying and improving deep learning algorithms on all sorts of medical data. We're an incredibly mission-driven bunch and really want to help people - and have had pretty awesome results so far[fn:enlitic-results]. Because of all that, I consider myself one of the luckiest people around - since I get to learn a ton, work on something I love, and (hopefully) am helping make the world a better place.
 
 To satisfy my love of learning, I am also a Master's student at the Georgia Institute of Technology studying Computer Science with a specialization in Machine Learning[fn:omscs].
 * Some of the cool things I've done so far are
