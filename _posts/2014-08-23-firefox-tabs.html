@@ -14,26 +14,26 @@ Have you ever lost some tabs due to some browser hijinks (and a bit of goofing u
 
 <div class="org-src-container">
 
-<pre class="src src-clojure">;; lein try clojure.org/data.json
-(require '[clojure.data.json :as json])
-
-(def home (System/getenv "HOME") "/.mozilla/firefox/something.default")
-(def sessions ["sessionstore.bak"
-               "sessionstore.bak-20140611075517"
-               "sessionstore.js"])
-
-(def data (-&gt;&gt; (nth sessions 0)
-               (str home "/")
-               slurp
-               json/read-json))
-
-(-&gt;&gt; data
-     :_closedWindows
-     first
-     :tabs
-     (map #(-&gt;&gt; % :entries (map :url)))
-     (map last)
-     clojure.pprint/pprint)
+<pre class="src src-clojure"><span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">lein try clojure.org/data.json</span>&#57344;&#57345;&#57345;
+<span style="color: #8c8c8c;">(</span>require '[<span style="color: #6434A3;">clojure.data.json</span> <span style="color: #D0372D;">:as</span> json]<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+&#57344;&#57345;&#57345;
+<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">def</span> <span style="color: #BA36A5;">home</span> <span style="color: #8c8c8c;">(</span><span style="color: #6434A3;">System</span>/getenv <span style="color: #008000;">"HOME"</span><span style="color: #8c8c8c;">)</span> <span style="color: #008000;">"/.mozilla/firefox/something.default"</span><span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">def</span> <span style="color: #BA36A5;">sessions</span> [<span style="color: #008000;">"sessionstore.bak"</span>&#57344;&#57345;&#57345;
+               <span style="color: #008000;">"sessionstore.bak-20140611075517"</span>&#57344;&#57345;&#57345;
+               <span style="color: #008000;">"sessionstore.js"</span>]<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+&#57344;&#57345;&#57345;
+<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">def</span> <span style="color: #BA36A5;">data</span> <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">-&gt;&gt;</span> <span style="color: #8c8c8c;">(</span>nth sessions 0<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+               <span style="color: #8c8c8c;">(</span>str home <span style="color: #008000;">"/"</span><span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+               slurp&#57344;&#57345;&#57345;
+               <span style="color: #6434A3;">json</span>/read-json<span style="color: #8c8c8c;">))</span>&#57344;&#57345;&#57345;
+&#57344;&#57345;&#57345;
+<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">-&gt;&gt;</span> data&#57344;&#57345;&#57345;
+     <span style="color: #D0372D;">:_closedWindows</span>&#57344;&#57345;&#57345;
+     first&#57344;&#57345;&#57345;
+     <span style="color: #D0372D;">:tabs</span>&#57344;&#57345;&#57345;
+     <span style="color: #8c8c8c;">(</span>map #<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">-&gt;&gt;</span> <span style="color: #BA36A5;">%</span> <span style="color: #D0372D;">:entries</span> <span style="color: #8c8c8c;">(</span>map <span style="color: #D0372D;">:url</span><span style="color: #8c8c8c;">)))</span>&#57344;&#57345;&#57345;
+     <span style="color: #8c8c8c;">(</span>map last<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
+     <span style="color: #6434A3;">clojure.pprint</span>/pprint<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
 </pre>
 </div>
 
