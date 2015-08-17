@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Clojure's source Macro"
+date:   2015-08-16
+categories:
+---
+
+<p>
+Something I see rarely talked about, but I've found incredibly useful, is Clojure's <code>source</code> macro - which simply prints the source code for a given symbol. While other languages have similar tools (such as ipython's <code>??</code>), and those tools are incredibly useful, they aren't as useful as Clojure's. The reason for this is that a huge amount of the core of the language is defined in Clojure, which makes it great for understanding what's going on, see idiomatic and efficient examples of how to do something, and provide an extremely easy way of extending things found in <code>clojure.core</code> (it's happened more than once that we needed a function <i>slightly</i> different from what was available - and having an actual copy of the code made it a breeze to make the modified version).
+</p>
+
+<p>
+Clojure has some of the most readable source code (in my opinion), and having a low fricition way of exploring foreign code has really helped me get a better grasp of the ecosystem, and make myself a better Clojurian and programmer.
+</p>
+
+<p>
+If/when I work on a language of my own, having a version of the <code>source</code> macro is something I will definitely be striving for - both in having the ability to see the source code (the easy part) and having the insides of a language worth seeing.
+</p>
