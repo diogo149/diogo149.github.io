@@ -13,7 +13,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+  background-color: #eee;
+  color:#444;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -44,7 +45,6 @@ a:visited { color: #205caa; }
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  background-color: white;
 }
 
 .site-title,
@@ -142,7 +142,6 @@ a:visited { color: #205caa; }
 
 .page-content {
   padding: 30px 0;
-  background-color: #fff;
 }
 
 
@@ -417,6 +416,18 @@ a:visited { color: #205caa; }
 /* Org mode styles */
 /* ----------------------------------------------------------*/
 
-th.left, td.left {
+th.org-left, td.org-left {
   padding: 2px;
+}
+
+h2.footnotes {
+  font-size: 1.2rem;
+}
+
+/* fixing spacing of footnotes */
+.footdef > sup {
+  float: left;
+}
+.footdef > .footpara {
+  padding-left: 20px;
 }
