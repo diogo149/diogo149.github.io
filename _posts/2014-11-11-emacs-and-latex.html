@@ -11,13 +11,13 @@ Recently, I've had to use Latex for the first time in a while (other than very m
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">use-package</span> <span style="color: #D0372D;">latex-preview-pane</span>&#57344;&#57345;&#57345;
-  <span style="color: #006FE0;">:commands</span> latex-preview-pane-mode&#57344;&#57345;&#57345;
-  <span style="color: #006FE0;">:diminish</span> latex-preview-pane-mode&#57344;&#57345;&#57345;
-  <span style="color: #006FE0;">:init</span> <span style="color: #8c8c8c;">(</span>add-hook 'LaTeX-mode-hook&#57344;&#57345;&#57345;
-                  '<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">lambda</span> <span style="color: #8c8c8c;">()</span>&#57344;&#57345;&#57345;
-                     <span style="color: #8c8c8c;">(</span>delete-other-windows<span style="color: #8c8c8c;">)</span>&#57344;&#57345;&#57345;
-                     <span style="color: #8c8c8c;">(</span>latex-preview-pane-mode<span style="color: #8c8c8c;">))))</span>&#57344;&#57345;&#57345;
+<pre class="src src-emacs-lisp"><span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">use-package</span> <span style="color: #D0372D;">latex-preview-pane</span>
+  <span style="color: #006FE0;">:commands</span> latex-preview-pane-mode
+  <span style="color: #006FE0;">:diminish</span> latex-preview-pane-mode
+  <span style="color: #006FE0;">:init</span> <span style="color: #8c8c8c;">(</span>add-hook 'LaTeX-mode-hook
+                  '<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">lambda</span> <span style="color: #8c8c8c;">()</span>
+                     <span style="color: #8c8c8c;">(</span>delete-other-windows<span style="color: #8c8c8c;">)</span>
+                     <span style="color: #8c8c8c;">(</span>latex-preview-pane-mode<span style="color: #8c8c8c;">))))</span>
 </pre>
 </div>
 
