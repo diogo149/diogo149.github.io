@@ -1,0 +1,25 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:0
+#+BEGIN_HTML
+---
+layout: post
+title:  "Emacsconf 2015"
+date:   2015-09-07
+categories:
+---
+#+END_HTML
+
+The other week, I went to Emacsconf in SF - being there for part of it and the rest watching through the stream. It was definitely a great use of time, and I was hoping to write down the little lessons to help crystalize them:
+1. Howard Abrams is a god of Emacs. His presentation was one of the most impressive displays of Emacs-ing I've ever seen. I think this was great for me, because it really opened my eyes to more of what is possible with Emacs, and gives me someone to look up towards.
+2. I still have a lot to improve on in my workflow. The lightning talks/IRC channel were great for figuring out new ways to improve my workflow. Things that I want to try include:
+   - ledger
+   - mu4e
+   - eshell
+   - my own literate devops
+   - writing an org-mode exporter
+   - watching "Emacs Lisp development tips" from John Wiegley: http://www.youtube.com/watch?v=QRBcm6jFJ3Q
+3. =calc= is awesome! Ever since the lightning talk, I've been using it a bunch instead of opening up a Python REPL.
+
+And now, the big lessons:
+1. This one is inspired by one of the guys I chatted with there, who didn't even use Emacs. I normally wouldn't have gone to a conference about something I wasn't already extremely into, but this guy going is, in hindsight, a brilliantly time-efficient way to learn about something. I should definitely copy this move. (:
+2. I have a lot to learn from others, but I should seek those others out so we can all learn together. The funny thing is that I knew this for all sorts of other topics, but I never really considered reaching out to people about Emacs, which seems a little silly in hindsight. I'm definitely looking forward to the SF Emacs meetups.
