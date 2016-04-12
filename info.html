@@ -1,0 +1,136 @@
+---
+layout: page
+title: About Diogo Moitinho de Almeida
+permalink: /info/
+---
+<style type="text/css">
+ /* don't show nav bar */
+ header.site-header {
+     visibility: hidden;
+ }
+</style>
+
+<div class="TOC"></div>
+
+<h3 id="achievements"">Achievements</h3>
+
+<p>
+  I won first place in the Cause-Effect pairs kaggle competition - a competition described by the ex-president of kaggle as the most difficult that they've had on the site. My model significantly outperformed the state-of-the-art baselines on this problem and generalized well to new domains. As an added bonus, I was invited to speak at NIPS about my solution.
+</p>
+<p>
+  At the Rensselaer Polytechnic Institute, my team won the highest prize world-wide in the Interdisciplinary Contest in Modeling by creating a predictive model for the effects of economic policy on the environment.
+</p>
+
+<p>
+  In addition to consistently being ranked first at Math competitions in the Philippines, I was able to transition my nation-wide successes to the International Math Olympiad, where I broke a 13-year losing stream for the Philippines. Some have told me that my victory caused more resources to be allocated for a training program for the country, which has since then had many more victories.
+</p>
+
+<p>
+  See my <a href="https://www.linkedin.com/in/diogomda">linkedin</a> for more achievements.
+</p>
+
+<h3 id="dl"">Deep Learning / Research</h3>
+
+<p>
+  Despite having a full-time job, I care enormously about the field of Deep Learning, and doing anything that I can to help forward it.
+</p>
+
+<p>
+  I've spoken at and been interviewed for conferences on what I believe the big problems in Deep Learning are and how we as a community will come together and solve some of them - in a talk called "Deep Learning: Modular in Theory, Inflexible in Practice", where I elaborate on how tooling affects the research directions we take and how better tooling could enable new avenues of research.
+</p>
+
+<p>
+  I also founded a group of individuals from different fields interested in Deep Learning, where we have regular reading groups and experiment in ways to better facilitate learning and creativity. We have done things from collaboratively writing a summary blog post of a paper to pair programming on extensions and follow-up analyses to experimenting with different ways of reading papers to maximize insights (one exercise we love is to get some high-level idea of the problem to solve or the trick used and to try and imagine different ways we would solve the problem, and after reading the paper compare what was done to what we thought). Furthermore, because of the diversity of backgrounds present in the reading group, it provides an excellent medium for getting inspiration from other fields and furthering the understanding of what we know about Deep Learning.
+</p>
+
+<p>
+  Because of my passion for sharing, I've insisted on sharing both the general insights we obtain while working on medical imaging as well as the successful ideas we test out in the reading group.
+  One example of the former is the paper <a href="http://arxiv.org/abs/1511.06827">GradNets: Dynamic Interpolation Between Neural Architectures</a>, where we created a framework that allows the benefits of easy to optimize architectures early in training and highly expressive architectures later in training.
+  For the latter, we wrote the paper <a href="http://arxiv.org/abs/1603.08029">Resnet in Resnet: Generalizing Residual Architectures</a>, where we generalize the state-of-the-art ResNet architecture and utilize these insights to significantly improve on the best results for CIFAR-10 with standard data augmentation and CIFAR-100.
+  In addition to that, the Deep Learning framework that I've written and we use at Enlitic, <a href="https://github.com/diogo149/treeano">treeano</a>, is open source - this framework was designed to be highly extensible to try out many new ideas, and because of its flexibility and ease of experimentation, allowed us to transition theoretical insights about learned convolutional filters into the concatenated ReLU activation scheme in <a href="http://arxiv.org/abs/1603.05201">Understanding and Improving Convolutional Neural Networks via Concatenated Rectified Linear Units</a>.
+</p>
+
+<h3 id="work"">Education / Work History</h3>
+
+<p>
+  I graduated Magna Cum Laude from the Rensselaer Polytechnic Instute (RPI) with degrees in Mathematics and Computer Science, where I did research in Algorithms (winning several of RPI's programming competitions) and High Performance Computing - where my team experimented with scaling out extremely large neural networks on one of the most powerful supercomputers in the world.
+</p>
+
+<p>
+  I've previously worked at both large software companies (Amazon) and small startups, where I've accumulated a wealth of practical knowledge when it comes to quickly building scalable, usable systems, softwawre best practices, and working in teams. I've transitioned this knowledge as a researcher into building excellent tools for myself and others to multiply our research throughput.
+</p>
+
+<p>
+  I'm a currently a Master's student at the Georgia Institute of Technology specializing in Machine Learning, where I'm working on deep character-level NLP models to exploit morphological information in medical text, and a Deep Learning researcher at Enlitic, where I build novel models to tackle the unique problems present in medical images. Despite being in industry, I maintain a deep devotion to open source, where I open as much as possible (see my <a href="https://github.com/diogo149">github</a> page) including a Deep Learning framework that I've written (on top of Theano) for all of our models.
+</p>
+
+<!-- ToC copied/modified from https://css-tricks.com/automatic-table-of-contents/ -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<style type="text/css">
+ .table-of-contents {
+     float: right;
+     width: 40%;
+     background: #ddd;
+     font-size: 0.8em;
+     padding: 1em 2em;
+     margin: 0 0 0.5em 0.5em;
+     border-radius: 10px;
+ }
+ .table-of-contents ul {
+     padding: 0;
+ }
+ .table-of-contents li {
+     margin: 0 0 0.25em 0;
+ }
+ .table-of-contents a {
+     text-decoration: none;
+ }
+ .table-of-contents a:hover,
+ .table-of-contents a:active {
+     text-decoration: underline;
+ }
+
+ .table-of-contents h4 {
+     margin: 0 0 10px 0;
+ }
+
+ h3:target {
+     animation: highlight 1s ease;
+ }
+
+ @keyframes highlight {
+     from { background: yellow; }
+     to { background: #eee; }
+ }
+</style>
+<script type="text/javascript">
+ var ToC =
+ "<nav role='navigation' class='table-of-contents'>" +
+ "<h4>On this page:</h4>" +
+ "<ul>";
+
+ var newLine, el, title, link;
+
+ $("article h3").each(function() {
+
+     el = $(this);
+     title = el.text();
+     link = "#" + el.attr("id");
+
+     newLine =
+     "<li>" +
+     "<a href='" + link + "'>" +
+     title +
+     "</a>" +
+     "</li>";
+
+     ToC += newLine;
+
+ });
+
+ ToC +=
+ "</ul>" +
+ "</nav>";
+
+ $(".TOC").prepend(ToC);
+</script>
