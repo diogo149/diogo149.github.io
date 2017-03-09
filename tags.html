@@ -71,7 +71,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
       {% comment %}
       NOTE: commenting out list of tags for now
       {% for tag in post.tags %}
-      <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      <a class="tag" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
       {% endcomment %}
     </h3>

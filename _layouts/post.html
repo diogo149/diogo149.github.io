@@ -13,7 +13,7 @@ layout: default
   </header>
   Tags:
   {% for tag in page.tags %}
-  <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+  <a class="tag" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
   {% endfor %}
   <article class="post-content">
   {{ content }}
