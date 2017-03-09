@@ -11,6 +11,10 @@ layout: default
       {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
   </header>
+  Tags:
+  {% for tag in page.tags %}
+  <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
   <article class="post-content">
   {{ content }}
   </article>

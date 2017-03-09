@@ -6,6 +6,7 @@ layout: post
 title:  "Clojure's source Macro"
 date:   2015-08-16
 categories:
+tags: ["The Joy of Clojure"]
 ---
 #+END_EXPORT
 
