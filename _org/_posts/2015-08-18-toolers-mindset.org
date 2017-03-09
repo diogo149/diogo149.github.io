@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "The Tooler's Mindset"
 date:   2015-08-18
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 A question that often comes up when other learn about how much time I've spent improving my tooling and workflow: is it worth it? It's a question I ask myself as well - after all, every moment I spend working on tooling is a moment not spent on solving some other problem (and presumably there's a real non-tooling problem I want to solve).
 

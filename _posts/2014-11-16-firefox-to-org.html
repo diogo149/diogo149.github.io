@@ -18,25 +18,24 @@ What I ended up doing was opening the html file with eww, and wrote a function t
 </p>
 
 <div class="org-src-container">
+<pre class="src src-emacs-lisp">  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/firefox-bookmark-eww-to-org-list</span> <span style="color: #8c8c8c;">()</span>
+    <span style="color: #036A07;">"convert a link representation of a firefox bookmark read from eww to that</span>
+<span style="color: #036A07;">  of an org mode list"</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">interactive</span><span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>delete-horizontal-space<span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>shr-copy-url<span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>insert <span style="color: #008000;">"- "</span><span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>end-of-line<span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>insert <span style="color: #008000;">"\n  - "</span><span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>yank<span style="color: #8c8c8c;">))</span>
 
-<pre class="src src-emacs-lisp"><span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/firefox-bookmark-eww-to-org-list</span> <span style="color: #8c8c8c;">()</span>
-  <span style="color: #036A07;">"convert a link representation of a firefox bookmark read from eww to that</span>
-<span style="color: #036A07;">of an org mode list"</span>
-  <span style="color: #8c8c8c;">(</span>interactive<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>delete-horizontal-space<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>shr-copy-url<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>insert <span style="color: #008000;">"- "</span><span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>end-of-line<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>insert <span style="color: #008000;">"\n  - "</span><span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>yank<span style="color: #8c8c8c;">))</span>
-
-<span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/firefox-bookmark-eww-to-org-list+next-line</span> <span style="color: #8c8c8c;">()</span>
-  <span style="color: #036A07;">"same as my/firefox-bookmark-eww-to-org-list, but moving to the next line</span>
-<span style="color: #036A07;">afterwards (useful with #'repeat)"</span>
-  <span style="color: #8c8c8c;">(</span>interactive<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>my/firefox-bookmark-eww-to-org-list<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>move-beginning-of-line nil<span style="color: #8c8c8c;">)</span>
-  <span style="color: #8c8c8c;">(</span>next-logical-line<span style="color: #8c8c8c;">))</span>
+  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/firefox-bookmark-eww-to-org-list+next-line</span> <span style="color: #8c8c8c;">()</span>
+    <span style="color: #036A07;">"same as my/firefox-bookmark-eww-to-org-list, but moving to the next line</span>
+<span style="color: #036A07;">  afterwards (useful with #'repeat)"</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">interactive</span><span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>my/firefox-bookmark-eww-to-org-list<span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>move-beginning-of-line nil<span style="color: #8c8c8c;">)</span>
+    <span style="color: #8c8c8c;">(</span>next-logical-line<span style="color: #8c8c8c;">))</span>
 </pre>
 </div>
 

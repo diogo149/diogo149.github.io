@@ -1,12 +1,12 @@
 #+OPTIONS: toc:nil
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Elisp and w3m-browse-url-dwim"
 date:   2014-09-20
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 I've been upgrading my Emacs/Elisp more than normal lately, and it's quite interesting. Despite the syntax being the same as Clojure, Elisp feels much more enlightening to use. As a comparison, Clojure makes it incredibly pleasurable to apply transformations on data, and what feels like it would take thousands of lines of Java can be done in dozens of lines of Clojure, but I still know how to do those things in non-Clojure. On the other hand, with Elisp, the feeling that when something bothers me, I can just change it easily, which is not something I felt when using Sublime Text, Eclipse, Intellij, or Vim.
 

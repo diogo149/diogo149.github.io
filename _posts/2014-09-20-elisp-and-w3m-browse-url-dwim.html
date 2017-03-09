@@ -14,28 +14,27 @@ On that note, I've started playing with emacs-w3m and the behaviour bothered me 
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/w3m-browse-url-dwim</span> <span style="color: #8c8c8c;">(</span>url <span style="color: #6434A3;">&amp;optional</span> new-session<span style="color: #8c8c8c;">)</span>
-  <span style="color: #036A07;">"Open url in existing visible w3m buffer, or make one if none exists"</span>
-  <span style="color: #8c8c8c;">(</span>interactive <span style="color: #8c8c8c;">(</span>browse-url-interactive-arg <span style="color: #008000;">"Emacs-w3m URL: "</span><span style="color: #8c8c8c;">))</span>
-  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
-      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Currently in a w3m buffer - go to url in new session</span>
-      <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">)</span>
-    <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Not in w3m - Find the first visible w3m buffer</span>
-    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">let</span> <span style="color: #8c8c8c;">((</span>this-buffer <span style="color: #8c8c8c;">(</span>current-buffer<span style="color: #8c8c8c;">))</span>
-          <span style="color: #8c8c8c;">(</span>list <span style="color: #8c8c8c;">(</span>buffer-list<span style="color: #8c8c8c;">)))</span>
-      <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">while</span> list
-        <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-current-buffer</span> <span style="color: #8c8c8c;">(</span>car list<span style="color: #8c8c8c;">)</span>
-          <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span>and <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
-                   <span style="color: #8c8c8c;">(</span>get-buffer-window<span style="color: #8c8c8c;">))</span>
-              <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">open url in that buffer</span>
-              <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-selected-window</span> <span style="color: #8c8c8c;">(</span>get-buffer-window<span style="color: #8c8c8c;">)</span>
-                <span style="color: #8c8c8c;">(</span>setq list nil<span style="color: #8c8c8c;">)</span>
-                <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">))</span>
-            <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">progn</span> <span style="color: #8c8c8c;">(</span>setq list <span style="color: #8c8c8c;">(</span>cdr list<span style="color: #8c8c8c;">))</span>
-                   <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">if there is no w3m buffer, make a new one</span>
-                   <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">when</span> <span style="color: #8c8c8c;">(</span>not list<span style="color: #8c8c8c;">)</span>
-                     <span style="color: #8c8c8c;">(</span>w3m-browse-url url new-session<span style="color: #8c8c8c;">)))))))))</span>
+<pre class="src src-emacs-lisp">  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/w3m-browse-url-dwim</span> <span style="color: #8c8c8c;">(</span>url <span style="color: #6434A3;">&amp;optional</span> new-session<span style="color: #8c8c8c;">)</span>
+    <span style="color: #036A07;">"Open url in existing visible w3m buffer, or make one if none exists"</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">interactive</span> <span style="color: #8c8c8c;">(</span>browse-url-interactive-arg <span style="color: #008000;">"Emacs-w3m URL: "</span><span style="color: #8c8c8c;">))</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
+        <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Currently in a w3m buffer - go to url in new session</span>
+        <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">)</span>
+      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Not in w3m - Find the first visible w3m buffer</span>
+      <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">let</span> <span style="color: #8c8c8c;">((</span>this-buffer <span style="color: #8c8c8c;">(</span>current-buffer<span style="color: #8c8c8c;">))</span>
+            <span style="color: #8c8c8c;">(</span>list <span style="color: #8c8c8c;">(</span>buffer-list<span style="color: #8c8c8c;">)))</span>
+        <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">while</span> list
+          <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-current-buffer</span> <span style="color: #8c8c8c;">(</span>car list<span style="color: #8c8c8c;">)</span>
+            <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">and</span> <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
+                     <span style="color: #8c8c8c;">(</span>get-buffer-window<span style="color: #8c8c8c;">))</span>
+                <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">open url in that buffer</span>
+                <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-selected-window</span> <span style="color: #8c8c8c;">(</span>get-buffer-window<span style="color: #8c8c8c;">)</span>
+                  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">setq</span> list nil<span style="color: #8c8c8c;">)</span>
+                  <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">))</span>
+              <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">progn</span> <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">setq</span> list <span style="color: #8c8c8c;">(</span>cdr list<span style="color: #8c8c8c;">))</span>
+                     <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">if there is no w3m buffer, make a new one</span>
+                     <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">when</span> <span style="color: #8c8c8c;">(</span>not list<span style="color: #8c8c8c;">)</span>
+                       <span style="color: #8c8c8c;">(</span>w3m-browse-url url new-session<span style="color: #8c8c8c;">)))))))))</span>
 </pre>
 </div>
 
@@ -44,28 +43,27 @@ I initially modelled it very heavily after <a href="http://sachachua.com/blog/20
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/w3m-browse-url-dwim</span> <span style="color: #8c8c8c;">(</span>url <span style="color: #6434A3;">&amp;optional</span> new-session<span style="color: #8c8c8c;">)</span>
-  <span style="color: #036A07;">"Open url in existing visible w3m buffer, or make one if none exists"</span>
-  <span style="color: #8c8c8c;">(</span>interactive <span style="color: #8c8c8c;">(</span>browse-url-interactive-arg <span style="color: #008000;">"Emacs-w3m URL: "</span><span style="color: #8c8c8c;">))</span>
-  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
-      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Currently in a w3m buffer - go to url in new session</span>
-      <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">)</span>
-    <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Not in w3m - Find the first visible w3m buffer</span>
-    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">let</span> <span style="color: #8c8c8c;">((</span>buffer <span style="color: #8c8c8c;">(</span>cl-find-if <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">lambda</span> <span style="color: #8c8c8c;">(</span>buffer<span style="color: #8c8c8c;">)</span>
-                                 <span style="color: #8c8c8c;">(</span>and
-                                  <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">buffer is in w3m mode</span>
-                                  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-current-buffer</span> buffer
-                                    <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">))</span>
-                                  <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">buffer is visible</span>
-                                  <span style="color: #8c8c8c;">(</span>get-buffer-window buffer<span style="color: #8c8c8c;">)))</span>
-                              <span style="color: #8c8c8c;">(</span>buffer-list<span style="color: #8c8c8c;">))))</span>
-      <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> buffer
-          <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">open url in that buffer</span>
-          <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-selected-window</span> <span style="color: #8c8c8c;">(</span>get-buffer-window buffer<span style="color: #8c8c8c;">)</span>
-            <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">))</span>
-        <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">if there is no w3m buffer, make a new one</span>
-        <span style="color: #8c8c8c;">(</span>w3m-browse-url url new-session<span style="color: #8c8c8c;">)))))</span>
+<pre class="src src-emacs-lisp">  <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">defun</span> <span style="color: #006699;">my/w3m-browse-url-dwim</span> <span style="color: #8c8c8c;">(</span>url <span style="color: #6434A3;">&amp;optional</span> new-session<span style="color: #8c8c8c;">)</span>
+    <span style="color: #036A07;">"Open url in existing visible w3m buffer, or make one if none exists"</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">interactive</span> <span style="color: #8c8c8c;">(</span>browse-url-interactive-arg <span style="color: #008000;">"Emacs-w3m URL: "</span><span style="color: #8c8c8c;">))</span>
+    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">)</span>
+        <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Currently in a w3m buffer - go to url in new session</span>
+        <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">)</span>
+      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Not in w3m - Find the first visible w3m buffer</span>
+      <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">let</span> <span style="color: #8c8c8c;">((</span>buffer <span style="color: #8c8c8c;">(</span>cl-find-if <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">lambda</span> <span style="color: #8c8c8c;">(</span>buffer<span style="color: #8c8c8c;">)</span>
+                                   <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">and</span>
+                                    <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">buffer is in w3m mode</span>
+                                    <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-current-buffer</span> buffer
+                                      <span style="color: #8c8c8c;">(</span>derived-mode-p 'w3m-mode<span style="color: #8c8c8c;">))</span>
+                                    <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">buffer is visible</span>
+                                    <span style="color: #8c8c8c;">(</span>get-buffer-window buffer<span style="color: #8c8c8c;">)))</span>
+                                <span style="color: #8c8c8c;">(</span>buffer-list<span style="color: #8c8c8c;">))))</span>
+        <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">if</span> buffer
+            <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">open url in that buffer</span>
+            <span style="color: #8c8c8c;">(</span><span style="color: #0000FF;">with-selected-window</span> <span style="color: #8c8c8c;">(</span>get-buffer-window buffer<span style="color: #8c8c8c;">)</span>
+              <span style="color: #8c8c8c;">(</span>w3m-goto-url-new-session url<span style="color: #8c8c8c;">))</span>
+          <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">if there is no w3m buffer, make a new one</span>
+          <span style="color: #8c8c8c;">(</span>w3m-browse-url url new-session<span style="color: #8c8c8c;">)))))</span>
 </pre>
 </div>
 

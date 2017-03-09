@@ -1,12 +1,12 @@
 #+OPTIONS: toc:nil
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Hello Playground"
 date:   2014-07-19
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 Just testing the appearance of the org-mode to jekyll conversion. Useful for CSS iteration.
 
 | <10>       | <40>                                     |

@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Clojure's source Macro"
 date:   2015-08-16
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 Something I see rarely talked about, but I've found incredibly useful, is Clojure's ~source~ macro - which simply prints the source code for a given symbol. While other languages have similar tools (such as ipython's ~??~), and those tools are incredibly useful, they aren't as useful as Clojure's. The reason for this is that a huge amount of the core of the language is defined in Clojure, which makes it great for understanding what's going on, see idiomatic and efficient examples of how to do something, and provide an extremely easy way of extending things found in ~clojure.core~ (it's happened more than once that we needed a function /slightly/ different from what was available - and having an actual copy of the code made it a breeze to make the modified version).
 

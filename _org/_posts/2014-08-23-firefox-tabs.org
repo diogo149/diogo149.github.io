@@ -1,12 +1,12 @@
 #+OPTIONS: toc:nil
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "The Joy of Clojure - Resurrecting Firefox Tabs"
 date:   2014-08-23
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 This post isn't about the (awesome) book, it's about the immense ease and pleasure of interactive with data using Clojure.
 
 Have you ever lost some tabs due to some browser hijinks (and a bit of goofing up)? I have recently. Rather than accept it, I decided to do some research and figure out that Firefox keeps all of this data in the deep dark corners of some json files. Knowing that, I fired up a repl with ~lein try clojure.org/data.json~ and began work.

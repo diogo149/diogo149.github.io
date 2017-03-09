@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Emacsconf 2015"
 date:   2015-09-07
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 The other week, I went to Emacsconf in SF - being there for part of it and the rest watching through the stream. It was definitely a great use of time, and I was hoping to write down the little lessons to help crystalize them:
 1. Howard Abrams is a god of Emacs. His presentation was one of the most impressive displays of Emacs-ing I've ever seen. I think this was great for me, because it really opened my eyes to more of what is possible with Emacs, and gives me someone to look up towards.

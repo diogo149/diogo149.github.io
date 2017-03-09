@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Emacs and Latex"
 date:   2014-11-11
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 Recently, I've had to use Latex for the first time in a while (other than very minor things). Notably, I'm using Emacs, as opposed to some of the other editors I've used in the past, from the simple (Sublime Text), to full-on IDEs, to a Frankenstein most of the two (LyX), and Emacs definitely has the best of both worlds. While I'm sure there is much more to learn, the maximum bang-for-the-buck that I've gotten is from ~latex-preview-pane~:
 

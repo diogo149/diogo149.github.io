@@ -1,12 +1,12 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "To org-page and back"
 date:   2015-07-09
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 After being tempted by a blogging solution that had more integration with org-mode - I've decided to move back to a jekyll-based solution. It isn't perfect, but the system is simple (in the sense that it's easier to understand what's going on) and forgiving (making it easy to resume if I stop) - both pretty nice things to have for what I'd like to be a low friction activity.

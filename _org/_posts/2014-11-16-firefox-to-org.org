@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:0
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title:  "Bookmarks: From Firefox to org-mode"
 date:   2014-11-16
 categories:
 ---
-#+END_HTML
+#+END_EXPORT
 
 I decided to migrating bookmarks from Firefox to org-more for multiple reasons (it's easier to add metadata, open them with different browsers, search, etc.). I started out simply copy-pasting the title, then the url, and maybe open the link to remember what it is and add some metadata into a hierarchical org-mode list, but it seemed incredibly repetitive.
 

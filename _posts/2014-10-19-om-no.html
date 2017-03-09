@@ -8,25 +8,25 @@ categories:
 <p>
 About 2 months ago, I gave a surprisingly well-received talk at the SF Clojurescript Meetup on the downsides of Om (I know, I expected to get lynched as well). Since then, I've been asked quite a few times for my slides and thoughts on the matter, so I figured that I could be DRY and write-up something to point people to (for that reason, I've also added a FAQ at the end).
 </p>
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1">Background</h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgf7145d4" class="outline-2">
+<h2 id="orgf7145d4">Background</h2>
+<div class="outline-text-2" id="text-orgf7145d4">
 <p>
 We had a 5k+ LOC, fairly complex app (mostly logic and not just presentational stuff) in 100% Om, and we had been working on it for months. We were all past the learning curve and knew how to deal with Om, loved it, and really wanted to make things work. I especially wanted to make things work with Om because the team trusted me to make the call on which framework to use. Eventually, we just hit a wall with it. We made a switch to Reagent instead, and could not have been happier.
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2">What Will Be Missed</h2>
-<div class="outline-text-2" id="text-orgheadline2">
+<div id="outline-container-orgb0a1218" class="outline-2">
+<h2 id="orgb0a1218">What Will Be Missed</h2>
+<div class="outline-text-2" id="text-orgb0a1218">
 <p>
 There were some really nice parts about Om though, especially compared to other front-end frameworks, but compared to Reagent, there was only one thing: debugging with a global atom (sure it's possible with Reagent, but not as idiomatic). If you've never tried it, I'd recommend trying it (no Om app required, just put all your state in one)!
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3">What Might Be Missed</h2>
-<div class="outline-text-2" id="text-orgheadline3">
+<div id="outline-container-orgc36c528" class="outline-2">
+<h2 id="orgc36c528">What Might Be Missed</h2>
+<div class="outline-text-2" id="text-orgc36c528">
 <p>
 There is a lot more that is really cool about Om, just that these things were things that we thought were more useful that it turned out to be in practice, or just not useful for what we were doing.
 </p>
@@ -44,9 +44,9 @@ The last good thing we didn't miss, which very much surprised us, was the commun
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4">What Won't Be Missed</h2>
-<div class="outline-text-2" id="text-orgheadline4">
+<div id="outline-container-org69ac1b4" class="outline-2">
+<h2 id="org69ac1b4">What Won't Be Missed</h2>
+<div class="outline-text-2" id="text-org69ac1b4">
 <p>
 Now for the part that everyone is waiting for! The parts that caused so much unnecessary confusion, pain, and suffering.
 </p>
@@ -72,9 +72,9 @@ Components work best when they know as little data as possible. That way, unnece
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">Reagent</h2>
-<div class="outline-text-2" id="text-orgheadline5">
+<div id="outline-container-org53b4778" class="outline-2">
+<h2 id="org53b4778">Reagent</h2>
+<div class="outline-text-2" id="text-org53b4778">
 <p>
 (I'll keep this short since this should be about Om.)
 </p>
@@ -92,36 +92,36 @@ I cannot think of a scenario that I would rather use Om than Reagent. Especially
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6">Conclusion</h2>
-<div class="outline-text-2" id="text-orgheadline6">
+<div id="outline-container-org0d68c80" class="outline-2">
+<h2 id="org0d68c80">Conclusion</h2>
+<div class="outline-text-2" id="text-org0d68c80">
 <p>
 From the outside, Om like like it takes advantage of all the Clojure-y goodness, but it turns out that you lose a lot of it. Reagent solves every problem with Om we've had, and more, and it's been an absolute pleasure to work with. Try it, you won't be disappointed.
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11">FAQ</h2>
-<div class="outline-text-2" id="text-orgheadline11">
-</div><div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7">How hard was the switch?</h3>
-<div class="outline-text-3" id="text-orgheadline7">
+<div id="outline-container-orgd91aed1" class="outline-2">
+<h2 id="orgd91aed1">FAQ</h2>
+<div class="outline-text-2" id="text-orgd91aed1">
+</div><div id="outline-container-org8e16440" class="outline-3">
+<h3 id="org8e16440">How hard was the switch?</h3>
+<div class="outline-text-3" id="text-org8e16440">
 <p>
 Incredibly easy. We used sablono with Om, which made most of the presentation stuff almost "just work" with Reagent. There was a good amount of work that needed to be done for the logic of where all the state is kept and how it's accessed, but I saw that as more of cleaning up technical debt when the app state didn't have to be structured as an explicit tree.
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8">Are you worried about how few people use Reagent?</h3>
-<div class="outline-text-3" id="text-orgheadline8">
+<div id="outline-container-org5fed231" class="outline-3">
+<h3 id="org5fed231">Are you worried about how few people use Reagent?</h3>
+<div class="outline-text-3" id="text-org5fed231">
 <p>
 I've actually been surprised by the number of people who talk to me about it. I wouldn't be suprised if there were almost as many people who use Reagent as Om, though they tend to be much less vocal about it.
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9">Reagent seems unmainted. Are you worried?</h3>
-<div class="outline-text-3" id="text-orgheadline9">
+<div id="outline-container-orga068e1a" class="outline-3">
+<h3 id="orga068e1a">Reagent seems unmainted. Are you worried?</h3>
+<div class="outline-text-3" id="text-orga068e1a">
 <p>
 Not at all! We've never had an issue with Reagent's functionality, and it has just worked with React as React has gotten updated.
 </p>
@@ -131,9 +131,9 @@ EDIT: I was just told on <a href="https://www.reddit.com/r/Clojure/comments/2jq0
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10">What about all these reusable components and the rest of the ecosystem that are being built for Om? Won't you miss those?</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-orged7ab19" class="outline-3">
+<h3 id="orged7ab19">What about all these reusable components and the rest of the ecosystem that are being built for Om? Won't you miss those?</h3>
+<div class="outline-text-3" id="text-orged7ab19">
 <p>
 I've personally never used them, so I can't comment on their quality.
 </p>
