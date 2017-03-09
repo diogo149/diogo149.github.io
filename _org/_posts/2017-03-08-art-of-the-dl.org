@@ -9,6 +9,6 @@ categories:
 ---
 #+END_EXPORT
 
-I've decided to start blogging again, but almost exclusively about Deep Learning (since that is what I almost exclusively work on). Despite the many mediums for disseminating information in the DL world, it seems like nothing beats a personal touch where you can talk about anything you want. What I have especially in mind is using this as a platform for sharing things that are insufficient to be papers (yet) but still hopefully interesting, including but not limited to: small scale experiments, crazy ideas, general thoughts, and negative results.
+I've decided to start blogging again, but almost exclusively about Deep Learning (since that is what I almost exclusively work on). Despite the many mediums for disseminating information in the DL world, it seems like nothing beats a personal touch where you can talk about anything you want. What I have especially in mind is using this as a platform for sharing things that are insufficient to be papers (yet) but still hopefully interesting, including but not limited to: small scale experiments, crazy ideas, general thoughts, reproducing results, and negative results.
 
 NOTE: I love the name "The Art of the DL". It sounds classy. It reflects how [[https://www.youtube.com/watch?v=W5JqB6e5QwU][sometimes science is more art than science]]. It references [[https://www.amazon.com/Trump-Art-Deal-Donald-J/dp/0399594493][pop culture]]. Don't take it as a political stance though - that is definitely not something I want to blog about.
