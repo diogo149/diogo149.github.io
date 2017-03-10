@@ -1,0 +1,23 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:0
+#+BEGIN_EXPORT html
+---
+layout: post
+title:  "The Power of Belief"
+date:   2017-03-09
+categories:
+tags: ["Mindset"]
+---
+#+END_EXPORT
+
+No, this is not about religion.
+
+This is about [[http://blog.dilbert.com/post/102964992706/goals-vs-systems][systems]]. One pattern that I've noticed when helping others with their systems is that believing (as in truly without-a-doubt believing) is key to success. When you doubt a system, you end of questioning it's worth, and this makes it so much harder to stick to.
+
+For example, exercise. A common problem for people I exercise with is feature creep. We start off with a [[https://www.amazon.com/Body-Science-Research-Strength-Training/dp/0071597174][simple and effective routine]], but then think: "We're missing X, let's do it", "I think I could do Y more", "It doesn't feel like we're doing enough", etc. There's always more to do, though. What started out as a simple effective routine might end up much more complicated, ineffective, and time consuming than intended.  The solution is belief in the system.
+
+A more recent example is that I've been trying the [[https://en.wikipedia.org/wiki/Pomodoro_Technique][Pomodoro Technique]]. I've tried it before, and I was underwhelmed[fn:whelm]. Recently though, I've been convinced that it made a lot of sense, and sure enough, have been extremely successful with it (so far).
+
+I'm probably the most skeptical person I know, but it would be foolish not to acknowledge the power of blind faith.
+
+[fn:whelm] Remembering that [[http://www.dictionary.com/browse/whelm][whelm]] is a word got a [[http://knowyourmeme.com/memes/sensible-chuckle][sensible chuckle]] out of me. It's the little things in life.
